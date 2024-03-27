@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    a:hover{
+        color: red;
+    }
+    input:focus{
+        background-color: yellow;
+    }
+    .parent:hover .hidden{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <label for="in"><a href="#">link (najedź na mnie)</a></label>
+    <input id="in" type="text" value="troche tekstu">
+    <div class="parent">
+        tekst w parent
+        <div class="hidden">ukryty tekst</div>
+    </div>
+</body>
+</html>
