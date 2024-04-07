@@ -1,0 +1,46 @@
+header{
+    text-align: center;
+    letter-spacing: 8px;
+    color:darkolivegreen;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    padding: 0;
+    width: 50%;
+    margin: 25px;
+    background-color: beige;
+    box-shadow: 2px 2px 10px;
+}
+.top{
+    background-color: darkolivegreen;
+    padding: 15px;
+    padding-left: 25px;
+    font-size: 25px;
+    /* text-align: center; */
+    margin-bottom: 15px;
+}
+.bot{
+    margin: 10px;
+    padding: 5px;
+}
+.adres{
+    text-align:right;
+    display: block;
+    margin-bottom: 25px;
+}
+.ulica{
+    color: blue;
+}
+.ulica, .kod{
+    margin: 5px;
+}
+
+.email, .tel{
+    margin: 5px;
+}

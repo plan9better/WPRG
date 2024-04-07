@@ -4,6 +4,7 @@ body{
 }
 header{
   top: 0;
+  margin:0;
   background-color: beige;
   letter-spacing: 3px;
   width: 100%;
@@ -14,8 +15,6 @@ fieldset {
   border: 1px solid #000;
 }
 .infield{
-  display: block;
-  text-align: center;
   letter-spacing: 5px;
 }
 input{
@@ -23,12 +22,46 @@ input{
   margin: 15px;
 }
 form {
-  display: flex;
   width: 100%;
-  background-color: red;
   display: block;
 }
+button{
+  background-color: grey;
+  padding: 5px;
+  float: right;
+  font-size: 20px;
+  border: none;
+}
 .additem{
+  box-shadow: 2px 2px 10px;
+  margin: 50px;
+  padding: 50px;
+  font-size: 1.5rem;
+  background-color: beige;
+}
+thead, th, th>tr{
+  background-color:rgb(58, 58, 52);
+  border: 1px solid rgb(58, 58, 52);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  counter-reset: rowNumber;
+}
+
+tbody tr {
+  counter-increment: rowNumber;
+}
+
+tbody tr:nth-child(even){
+  background-color: azure;
+}
+tbody td:first-child::before {
+  padding: 20px;
+  content: counter(rowNumber);
+}
+#table{
+  box-shadow: 2px 2px 10px;
   margin: 50px;
   padding: 50px;
   font-size: 1.5rem;
